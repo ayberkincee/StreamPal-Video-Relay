@@ -63,5 +63,7 @@ Forwards video data from broadcasters to streamers.
 sendForwardStreamMessage(ws, messageData);
 ```
 
-License
+## License
 This project is licensed under the GPL-3.0 License
+## Acknowledgments
+- Google Bard and Chat GPT along with Codeium for helping with lots of questions I had about scalabilty along with proper routes to take and such!
