@@ -20,13 +20,13 @@ This project provides a WebSocket streaming server that facilitates real-time co
 
 1. Clone the repository:
 
-```bash 
-git clone <repository-url>
 ```bash
+git clone <repository-url>
+```
 2. Install dependencies:
 ```bash 
 cd <project-folder> && npm install
-```bash
+```
 
 npm start
 
@@ -53,4 +53,4 @@ Represents a chunk of video data with metadata.
 
 ```javascript
 const chunk = new ChunkData(uint8Array);
-```javascript
+```
