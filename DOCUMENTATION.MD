@@ -54,3 +54,10 @@ Represents a chunk of video data with metadata.
 ```javascript
 const chunk = new ChunkData(uint8Array);
 ```
+## Methods
+- toUint8Array(): Converts the ChunkData object to a Uint8Array.
+# Function: sendForwardStreamMessage
+Forwards video data from broadcasters to streamers.
+```javascript
+sendForwardStreamMessage(ws, messageData);
+```
