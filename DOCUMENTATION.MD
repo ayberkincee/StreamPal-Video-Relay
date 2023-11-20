@@ -20,8 +20,37 @@ This project provides a WebSocket streaming server that facilitates real-time co
 
 1. Clone the repository:
 
-```bash git clone <repository-url>
-
+```bash 
+git clone <repository-url>
+```bash
 2. Install dependencies:
-```bash cd <project-folder> && npm install
+```bash 
+cd <project-folder> && npm install
+```bash
 
+npm start
+
+
+The server will be running on port 3000.
+
+## Usage
+
+### Broadcasting
+
+Broadcasters connect to the WebSocket server and send video data in chunks. The server handles the aggregation of these chunks and notifies streamers when the complete video is received.
+
+### Streaming
+
+Streamers connect to the WebSocket server and request data from specific broadcasters. They receive the video data in chunks, allowing for efficient streaming.
+
+## API Reference
+
+### Class: ChunkData
+
+Represents a chunk of video data with metadata.
+
+#### Constructor
+
+```javascript
+const chunk = new ChunkData(uint8Array);
+```javascript
